@@ -1,0 +1,14 @@
+{
+  "name": "mfa-authenticator",
+  "version": "1.0.0",
+  "description": "Simple MFA token viewer with IP whitelist",
+  "main": "server.js",
+  "scripts": {
+    "start": "node server.js",
+    "docker:up": "docker compose up --build"
+  },
+  "dependencies": {
+    "express": "^4.21.2",
+    "otplib": "^12.0.1"
+  }
+}

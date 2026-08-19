@@ -1,0 +1,15 @@
+services:
+  mfa-authenticator:
+    build: .
+    container_name: mfa-authenticator
+    ports:
+      - "3000:3000"
+    env_file:
+      - .env
+    environment:
+      PORT: 3000
+      HOST: 0.0.0.0
+      ACCOUNTS_FILE: /app/accounts.json
+    volumes:
+      - ./accounts.json:/app/accounts.json:ro
+    restart: unless-stopped

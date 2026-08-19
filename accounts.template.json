@@ -1,0 +1,10 @@
+[
+  {
+    "name": "Example Account",
+    "secret": "JBSWY3DPEHPK3PXP"
+  },
+  {
+    "name": "Another Account",
+    "secret": "BASE32SECRET123456"
+  }
+]
