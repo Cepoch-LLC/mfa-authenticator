@@ -119,6 +119,31 @@ app.get('/', (req, res) => {
       color: #666;
       padding: 12px 2px;
     }
+    @media (prefers-color-scheme: dark) {
+      body {
+        background: #0f1115;
+        color: #f3f4f6;
+      }
+      .search {
+        background: #171a21;
+        border-color: #303643;
+        color: #f3f4f6;
+      }
+      .search::placeholder {
+        color: #98a2b3;
+      }
+      .card {
+        background: #171a21;
+        border-color: #303643;
+      }
+      .timer,
+      .empty {
+        color: #98a2b3;
+      }
+      .error {
+        color: #ff8a80;
+      }
+    }
   </style>
 </head>
 <body>
